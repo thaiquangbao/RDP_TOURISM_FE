@@ -8,6 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { MdTravelExplore } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
+import { FiChevronRight } from "react-icons/fi";
 const Footer = () => {
   return (
     <section className='footer'>
@@ -51,6 +52,22 @@ const Footer = () => {
               <span className='groupTitle'>
                 Địa chỉ của chúng tôi
               </span>
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Bảo hiểm
+              </li>
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Hãng
+              </li>
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Du lịch
+              </li>
+              <li className='footerList flex'>
+                <FiChevronRight className='icon' />
+                Thanh toán
+              </li>
             </div>
           </div>  
         </div>
