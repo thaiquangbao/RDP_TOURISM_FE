@@ -50,7 +50,7 @@ const Main = () => {
                           <span>{grade}<small>+1</small></span>
                       </div>
                       <div className='price'>
-                        <h5>{fees}</h5>
+                        <h4>{fees}</h4>
                       </div>
                     </div>
                     <div className='desc'>
