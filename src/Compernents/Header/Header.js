@@ -1,32 +1,30 @@
 /* eslint-disable jsx-a11y/heading-has-content */
-import React, {useRef, useEffect} from 'react'
+import React, { useEffect} from 'react'
 import video from '../../videos/landscape.mp4'
 import { GrLocation } from "react-icons/gr";
 import './Header.scss'
 import { HiFilter } from "react-icons/hi";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const Header = () => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.defaultPlaybackRate = 1.5;
-      videoRef.current.playbackRate = 1.5;
-    }
-  }, []);
+  
+  useEffect(() =>{
+      Aos.init({duration: 1500})
+  },[])
   return (
     <section className='heading'>
       <div className="overplay"></div>
-        <video className='videoHeader' src={video} ref={videoRef} muted autoPlay loop type='video/mp4'></video>
+        <video className='videoHeader' src={video}  muted autoPlay loop type='video/mp4'></video>
         <div className='headerContent container'>
             <div className='textDiv'>
-              <span className='smallText'>
+              <span className='smallText' data-aos="fade-up">
                     CÁC GÓI DỊCH VỤ CỦA CHÚNG TÔI
               </span>
-              <h1 className='headerTitle'>
+              <h1 className='headerTitle' data-aos="fade-up">
                   LỰA CHỌN KỲ NGHĨ CỦA BẠN
               </h1>
             </div>
-            <div className='cardDiv grid'>
+            <div className='cardDiv grid' data-aos="fade-up">
               <div className='destinationInput'>
                 <label htmlFor='city' >Search your destination:</label>
               </div>

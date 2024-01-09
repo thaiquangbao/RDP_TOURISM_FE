@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Main.scss'
 import { IoLocationOutline } from "react-icons/io5";
 import { PiClipboardText } from "react-icons/pi";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const Main = () => {
   const data =[
       {
@@ -23,9 +25,12 @@ const Main = () => {
         description: "Từ năm 2010, chúng tôi mở rộng và khắp Việt Nam với hơn 10 địa điểm như SunWorld Bà Bà Hills, VinWonders Nha Trang, SunWorld Fansipan Legend, VinWonders Phú Quốc, SunWorld Hạ Long Park, SunWorld Hòn Thơm Phú Quốc, VinWonders Nam Hội An, SunWorld Núi Bà Đen Tây Ninh, Xẻo Quýt Relic Đồng Tháp, Sài Gòn Skydec, Tắm Bùn Trăm Trứng Nha Trang, MerPerle Hòn Tằm, Cầu Kính Rồng Mây..."
       }
   ]
+  useEffect(() =>{
+    Aos.init({duration: 1500})
+  },[])
   return (
     <section className='main container section'>
-      <div className='secTitle'>
+      <div className='secTitle' data-aos="fade-right">
         <h3 className='title'> 
           Most visited destinations
         </h3>
@@ -33,7 +38,7 @@ const Main = () => {
       <div className='secContent grid'>
           {data.map(({id,imgSrc,desTitle,location,grade,fees,description}) =>{
             return (
-              <div key={id} className='singleDestination'>
+              <div key={id} className='singleDestination' data-aos="fade-up">
                   <div className='imageDiv'>
                     <img src={imgSrc} alt={description} />
                   </div>
