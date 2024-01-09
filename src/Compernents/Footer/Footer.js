@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='footerLinks grid'>
-            <div className='linkGroup' data-aos="fade-up">
+            <div className='linkGroup' data-aos="fade-up" data-aos-duration="3000">
               <span className='groupTitle'>
                 DỊCH VỤ
               </span>
@@ -73,7 +73,7 @@ const Footer = () => {
                 Dịch vụ du lịch
               </li>
             </div>
-            <div className='linkGroup' data-aos="fade-up">
+            <div className='linkGroup' data-aos="fade-up" data-aos-duration="4000">
               <span className='groupTitle'>
                 CHĂM SÓC KHÁCH HÀNG
               </span>

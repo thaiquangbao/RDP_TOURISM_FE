@@ -27,28 +27,31 @@ const Header = () => {
             <div className='cardDiv grid' data-aos="fade-up">
               <div className='destinationInput'>
                 <label htmlFor='city' >Search your destination:</label>
-              </div>
-              <div className='input flex'>
-                <input type='text' placeholder='Enter name here...'/>
-                <GrLocation className='icon'/>
+              
+                <div className='input flex'>
+                  <input type='text' placeholder='Enter name here...'/>
+                  <GrLocation className='icon'/>
+                </div>
               </div>
               <div className='dateInput'>
                 <label htmlFor='date' >Search your date:</label>
-              </div>
+              
               <div className='input flex'>
                 <input type='date' />
                 <GrLocation className='icon'/>
               </div>
+              </div>
               <div className='priceInput'>
                 <div className='label_total flex'>
                   <label htmlFor="price">Max price : </label>
-                  <h3 className='total'> 10.000.000 VND</h3>
+                  <label className='total'> 10.000.000 VND</label>
 
-                  
-                </div>
+                 </div> 
+                
                 <div className='input flex'>
                   <input type='range' max="10000" min="500"/>
                 </div>
+                
               </div> 
               <div className='searchOptions flex'>
                 <HiFilter className='icon'/>

@@ -58,6 +58,8 @@ li{
   border: none;
   outline: none;
   cursor: pointer;
+  width: 130px;
+  
 }
 .btn a{
   color: var(--whiteColor);

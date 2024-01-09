@@ -17,7 +17,7 @@ const Navbar = () => {
             <header className='header flex'>
                 <div className='logoDiv'>
                     <a href='#' className='logo flex' >
-                        <div>
+                        <div className='logoTitle'>
                             <h2>
                                 <img alt='Công ty dịch vụ và lữ hành Rồng Đất Phan' className='icon' src='https://res.cloudinary.com/dk41ftplg/image/upload/v1704604655/RDP_TOURISM/ntmnpbmaymnucb5e4zkn.png'></img>
                                 RONGDATPHAN
@@ -37,28 +37,23 @@ const Navbar = () => {
                     <ul className="navLists flex">
                         <li className='navItem '>
                             <a href='#' className='navLink'>
-                                TRANG CHỦ
+                                HOME
                             </a>
                             
                         </li>
                         <li className='navItem '>
                             <a href='#' className='navLink'>
-                                    TOUR TRONG NƯỚC
+                                    TOUR
                             </a>
                         </li>
                         <li className='navItem '>
                             <a href='#' className='navLink'>
-                                TOUR NƯỚC NGOÀI
+                                SERVICE
                             </a>
                         </li>
                         <li className='navItem '>
                             <a href='#' className='navLink'>
-                                DỊCH VỤ
-                            </a>
-                        </li>
-                        <li className='navItem '>
-                            <a href='#' className='navLink'>
-                                LIÊN HỆ
+                                CONTACT
                             </a>
                         </li>
                         <button className='btn'>
