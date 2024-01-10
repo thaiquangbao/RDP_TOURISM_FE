@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
         <div className='footerCard flex'>
           <div className='footerIntro flex'> 
-            <div className='logoDiv'>
+            <div className='logoDiv' data-aos="fade-up">
               <a href='#' className='logo flex'>
               <img alt='Công ty dịch vụ và lữ hành Rồng Đất Phan' className='icon' src='https://res.cloudinary.com/dk41ftplg/image/upload/v1704604655/RDP_TOURISM/ntmnpbmaymnucb5e4zkn.png'></img>
               RONGDATPHAN TRAVEL
