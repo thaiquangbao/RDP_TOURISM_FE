@@ -23,6 +23,15 @@ const Main = () => {
         grade: "Culture Relax",
         fees: "3.000.000 VND",
         description: "Từ năm 2010, chúng tôi mở rộng và khắp Việt Nam với hơn 10 địa điểm như SunWorld Bà Bà Hills, VinWonders Nha Trang, SunWorld Fansipan Legend, VinWonders Phú Quốc, SunWorld Hạ Long Park, SunWorld Hòn Thơm Phú Quốc, VinWonders Nam Hội An, SunWorld Núi Bà Đen Tây Ninh, Xẻo Quýt Relic Đồng Tháp, Sài Gòn Skydec, Tắm Bùn Trăm Trứng Nha Trang, MerPerle Hòn Tằm, Cầu Kính Rồng Mây..."
+      },
+      {
+        id: 3,
+        imgSrc: 'https://pos.nvncdn.com/86c7ad-50310/art/artCT/20230420_0moA6KAt.png',
+        desTitle: "Cầu vàng",
+        location: "Đà Nẵng",
+        grade: "Culture Relax",
+        fees: "3.000.000 VND",
+        description: "Từ năm 2010, chúng tôi mở rộng và khắp Việt Nam với hơn 10 địa điểm như SunWorld Bà Bà Hills, VinWonders Nha Trang, SunWorld Fansipan Legend, VinWonders Phú Quốc, SunWorld Hạ Long Park, SunWorld Hòn Thơm Phú Quốc, VinWonders Nam Hội An, SunWorld Núi Bà Đen Tây Ninh, Xẻo Quýt Relic Đồng Tháp, Sài Gòn Skydec, Tắm Bùn Trăm Trứng Nha Trang, MerPerle Hòn Tằm, Cầu Kính Rồng Mây..."
       }
   ]
   useEffect(() =>{
