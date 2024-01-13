@@ -43,7 +43,7 @@ const Main = () => {
         <h3 className='title'> 
           Most visited destinations
         </h3>
-        </div>
+      </div>
       <div className='secContent grid'>
           {data.map(({id,imgSrc,desTitle,location,grade,fees,description}) =>{
             return (
@@ -79,6 +79,54 @@ const Main = () => {
           })
           }
       
+      </div>
+      <div className='secTitle' style={{marginTop: 100}} data-aos="fade-right">
+        <h3 className='title'> 
+          Những địa điểm nên đến tháng 1
+        </h3>
+      </div>
+      <div className='secContent grid'>
+          {data.map(({id,imgSrc,desTitle,location,grade,fees,description}) =>{
+            return (
+              <div key={id} className='singleDestination' data-aos="fade-up">
+                  <div className='imageDiv'>
+                    <img src={imgSrc} alt={description} />
+                  </div>
+                  <div className='cardInfo'> 
+                    <h4 className='desTitle'>{desTitle}</h4>
+                    <span className='continent flex'>
+                      <IoLocationOutline className='icon' />
+                      <span className='name'>
+                        {location}
+                      </span>
+                    </span>
+                    <div className='fees flex'>
+                      <div className='grade'>
+                          <span>{grade}<small>+1</small></span>
+                      </div>
+                      <div className='price'>
+                        <h4>{fees}</h4>
+                      </div>
+                    </div>
+                    <div className='desc'>
+                        <p>{description}</p>
+                    </div>
+                    <button className='btn flex'>Detail<PiClipboardText className='icon'/></button>
+                  </div>
+                  
+              </div>
+              
+            )
+          })
+          }
+      
+      </div>
+      <div className='memory'>
+        <div className='secTitle' style={{marginTop: 100}} data-aos="fade-right">
+          <h3 className='title'> 
+            Kỷ niệm của chúng tôi cùng với khách hàng
+          </h3>
+        </div>
       </div>
     </section>
     
