@@ -4,6 +4,7 @@ import Navbar from './Compernents/Navbar/Navbar';
 import Header from './Compernents/Header/Header'
 import Main from './Compernents/Main/Main'
 import Footer from './Compernents/Footer/Footer'
+import Memory from './Compernents/Memory/Memory';
 function App() {
   // const [info, setInfo] =  useState({
   //     fullName: "" ,
@@ -48,6 +49,7 @@ function App() {
         <Navbar />
         <Header />
         <Main />
+        <Memory />
         <Footer />
       </>
   );

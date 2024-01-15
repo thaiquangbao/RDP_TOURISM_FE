@@ -148,16 +148,7 @@
                     position: relative;
                     font-size: 2.3rem;
                     width: max-content;
-                    &::after{
-                        position: absolute;
-                        content: '';
-                        background: var(--SecondaryColor);
-                        height: 5px;
-                        width: 145px;
-                        right: 0;
-                        bottom: 5px;
-                        z-index: -1;
-                    }
+                    
                 }
             }
             .cardDiv{

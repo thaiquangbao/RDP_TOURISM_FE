@@ -4,6 +4,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import { PiClipboardText } from "react-icons/pi";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+
+
 const Main = () => {
   const data =[
       {
@@ -80,12 +82,12 @@ const Main = () => {
           }
       
       </div>
-      <div className='secTitle' style={{marginTop: 100}} data-aos="fade-right">
+      <div className='suggestTitle' data-aos="fade-right">
         <h3 className='title'> 
-          Những địa điểm nên đến tháng 1
+         Gợi ý địa điểm du lịch tháng 1
         </h3>
       </div>
-      <div className='secContent grid'>
+      <div className='suggestContent grid'>
           {data.map(({id,imgSrc,desTitle,location,grade,fees,description}) =>{
             return (
               <div key={id} className='singleDestination' data-aos="fade-up">
@@ -121,13 +123,7 @@ const Main = () => {
           }
       
       </div>
-      <div className='memory'>
-        <div className='secTitle' style={{marginTop: 100}} data-aos="fade-right">
-          <h3 className='title'> 
-            Kỷ niệm của chúng tôi cùng với khách hàng
-          </h3>
-        </div>
-      </div>
+      
     </section>
     
   )

@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
                 <div className='toggleNavbar' onClick={showNav}>
                         <TbGridDots className='icon' />
-                    </div>
+                </div>
                 <div className={active}>
                     <ul className="navLists flex">
                         <li className='navItem '>
